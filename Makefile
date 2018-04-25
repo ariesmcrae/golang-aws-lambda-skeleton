@@ -5,7 +5,7 @@ clean:
 	@rm -f handler.zip
 
 compile: clean
-	GOOS=linux go build -o main
+	GOOS=linux go build -o main ./cmd
 
 run: compile
 	sam local invoke Function -e event.json

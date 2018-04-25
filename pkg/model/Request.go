@@ -1,4 +1,4 @@
-package main
+package model
 
 type Request struct {
 	ID    string `json:"id"`
