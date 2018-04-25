@@ -1,5 +1,8 @@
 default: build
 
+install_dependencies:
+	go get github.com/aws/aws-lambda-go/lambda
+
 clean:
 	@rm -f main
 	@rm -f handler.zip

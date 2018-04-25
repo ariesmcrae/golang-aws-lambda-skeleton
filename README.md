@@ -11,9 +11,11 @@ git clone https://github.com/ariesmcrae/golang-aws-lambda-skeleton.git
 
 cd golang-aws-lambda-skeleton
 
+make install_dependencies
+
 make run
 
-//output 
+//output
 {"message":"Process Request Id 12345","ok":true}
 ```
 
