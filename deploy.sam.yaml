@@ -4,6 +4,7 @@ Description: A simple Hello World Serverless project
 Resources:
     Function:
         Type: AWS::Serverless::Function
+        FunctionName: !Sub "${AWS::StackName}-GolangSkeleton"
         Properties:
             Runtime: go1.x
             Handler: main

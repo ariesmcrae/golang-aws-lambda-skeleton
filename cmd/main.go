@@ -12,9 +12,10 @@ func main() {
 }
 
 func Handler(request model.Request) (model.Response, error) {
-	return model.Response{
+	myResponse := model.Response{
 		Message: fmt.Sprintf("Process Request Id %s", request.ID),
 		Ok:      true,
-	}, nil
+	}
 
+	return myResponse, nil
 }
