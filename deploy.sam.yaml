@@ -9,4 +9,8 @@ Resources:
             Runtime: go1.x
             Handler: main
             CodeUri: .
-            Timeout: 5
+            Timeout: 30
+        Policies:
+            - AWSLambdaBasicExecutionRole
+            - AmazonDynamoDBFullAccess
+            - AWSXrayWriteOnlyAccess        
